@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Anime Website
+
+Welcome to the Anime Website, a platform for anime enthusiasts to explore trending anime, discover recommendations, and engage in discussions. This project utilizes Next.js, React JS for the user interface, Jikan API for anime data, and Prisma for connecting to a MySQL database. Users can enjoy a seamless experience with features like watching trailers, bookmarking favorite anime, and engaging in discussions.
+
+## Features
+Trending Anime: Explore the latest trending anime.
+Anime Recommendations: Discover personalized anime recommendations that change on every page restart.
+Pagination: Seamless navigation through anime lists with pagination.
+Anime Details: View detailed information for each anime, including synopsis, ranking, rating score, episode count, and age category.
+Watch Trailers: Watch trailers for your favorite anime directly on the website.
+GitHub Authentication: Log in using your GitHub account.
+Bookmarks: Logged-in users can bookmark their favorite anime.
+Comments: Post and read comments on anime pages.
+Profile Security: Users cannot access the profile page without proper authentication.
 
 ## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clone this reporsitory: https://github.com/GlennWilliam/GeekAnime.git
+2. Install dependencies: npm install
+3. Set up the MySQL database and update the Prisma configuration in prisma/schema.prisma with your database connection details.
+4. Create your database name. This project has a database name of "geekanime". If you want to use another database name, make sure to configure the .env file. 
+5. Run migrations: npx prisma migrate dev
+6. Edit the .env file for authenticating the github account. The github client id and secret id can be obtained from your github account
+7. Start the development server: npm run dev
+8. Access the website at http://localhost:3000 in your browser.
