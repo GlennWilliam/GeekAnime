@@ -29,7 +29,7 @@ const CollectionButton = ({
   return (
     <>
       {isCreated ? (
-        <p className="text-color-primary">Berhasil Ditambahkan Ke Koleksi</p>
+        <p className="text-color-primary">Added to your collection</p>
       ) : (
         <button
           onClick={handleCollection}
