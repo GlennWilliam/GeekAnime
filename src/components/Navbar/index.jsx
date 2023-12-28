@@ -1,6 +1,6 @@
 import Link from "next/link";
 import InputSearch from "./InputSearch";
-import UserActionButton from "./userActionButton";
+import UserActionButton from "./UserActionButton";
 
 const Navbar = () => {
   return (
